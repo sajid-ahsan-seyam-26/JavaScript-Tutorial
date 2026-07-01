@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Life Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <header>
+      <h1>Student Life Manager</h1>
+      <p>Easy JavaScript Project for Beginners</p>
+      <button id="darkModeBtn">Dark Mode</button>
+    </header>
+
+    <section class="card">
+      <h2>1. Student Profile</h2>
+
+      <input type="text" id="studentName" placeholder="Enter your name">
+      <input type="text" id="studentGoal" placeholder="Enter your study goal">
+
+      <button id="saveProfileBtn">Save Profile</button>
+
+      <div class="result" id="profileResult"></div>
+    </section>
+
+    <section class="card">
+      <h2>2. To-Do List</h2>
+
+      <input type="text" id="taskInput" placeholder="Enter your task">
+
+      <button id="addTaskBtn">Add Task</button>
+
+      <select id="taskFilter">
+        <option value="all">All Tasks</option>
+        <option value="pending">Pending Tasks</option>
+        <option value="completed">Completed Tasks</option>
+      </select>
+
+      <ul id="taskList"></ul>
+    </section>
+
+    <section class="card">
+      <h2>3. Income & Expense Tracker</h2>
+
+      <input type="text" id="moneyTitle" placeholder="Example: Food, Tuition, Salary">
+      <input type="number" id="moneyAmount" placeholder="Amount">
+
+      <select id="moneyType">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+
+      <button id="addMoneyBtn">Add</button>
+
+      <div class="money-box">
+        <p>Total Income: <span id="totalIncome">0</span></p>
+        <p>Total Expense: <span id="totalExpense">0</span></p>
+        <p>Balance: <span id="balance">0</span></p>
+      </div>
+
+      <ul id="moneyList"></ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Grade Calculator</h2>
+
+      <input type="number" id="mark1" placeholder="Subject 1 mark">
+      <input type="number" id="mark2" placeholder="Subject 2 mark">
+      <input type="number" id="mark3" placeholder="Subject 3 mark">
+      <input type="number" id="mark4" placeholder="Subject 4 mark">
+
+      <button id="calculateGradeBtn">Calculate Grade</button>
+
+      <div class="result" id="gradeResult"></div>
+    </section>
+
+    <section class="card">
+      <h2>5. Random Study Tip</h2>
+
+      <button id="tipBtn">Show Tip</button>
+
+      <div class="result" id="tipResult"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
